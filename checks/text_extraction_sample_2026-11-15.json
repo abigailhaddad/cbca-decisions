@@ -1,0 +1,487 @@
+{
+ "what": "60 random decision PDFs (seed 7), downloaded again 2026-11-15 and read page by page with pdftotext (poppler). pypdf_chars is the length of the text in the table; pdftotext_chars is the total from pdftotext; empty_pages lists pages with under 30 characters.",
+ "rows": [
+  {
+   "case": "CBCA 4738-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2015/SOMERS_11-04-15_4738-TRAV__BRIAN_TSE.pdf",
+   "pages": 5,
+   "pypdf_chars": 9549,
+   "pdftotext_chars": 9500,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6562-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2019/KULLBERG_11-13-19_6562-TRAV__RICHARD_W._BRIGGS%20(Decision).pdf",
+   "pages": 2,
+   "pypdf_chars": 1827,
+   "pdftotext_chars": 1810,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6292, 6386",
+   "url": "https://www.cbca.gov/files/decisions/2020/CHADWICK_02-21-20_6292,%206386__CSI%20AVIATION,%20INC.%20(Decision).pdf",
+   "pages": 2,
+   "pypdf_chars": 2510,
+   "pdftotext_chars": 2381,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6566-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2020/O'ROURKE_02-24-20_6566-RELO__IN_THE_MATTER_OF_CHARLES_BROWN%20(Decision).pdf",
+   "pages": 3,
+   "pypdf_chars": 6709,
+   "pdftotext_chars": 6657,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5683",
+   "url": "https://www.cbca.gov/files/decisions/2020/SOMERS_04-22-20_5683__PERNIX_SERKA_JOINT_VENTURE%20(Decision).pdf",
+   "pages": 11,
+   "pypdf_chars": 25841,
+   "pdftotext_chars": 25863,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5588",
+   "url": "https://www.cbca.gov/files/decisions/2018/CHADWICK_05-31-18_5588_MAGWOOD_SERVICES_INC.pdf",
+   "pages": 3,
+   "pypdf_chars": 4401,
+   "pdftotext_chars": 4337,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 921-ISDA, 1021-ISDA, 1022-ISDA, 1023-ISDA, 1024-ISDA, 1025-ISDA",
+   "url": "https://www.cbca.gov/files/decisions/2012/KULLBERG_07-17-12_921-ISDA%20THROUGH%201025-ISDA__SOUTHEAST_ALASKA_REGIONAL_HEALTH_CONSORTIUM_508.pdf",
+   "pages": 1,
+   "pypdf_chars": 863,
+   "pdftotext_chars": 747,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 8806-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2026/SULLIVAN_03-20-26_8806-RELO__CRISTIN_S%20(DECISION).pdf",
+   "pages": 4,
+   "pypdf_chars": 8773,
+   "pdftotext_chars": 8666,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6820",
+   "url": "https://www.cbca.gov/files/decisions/2020/SHERIDAN_08-13-20_6820__GMA_PROPERTIES,_LLC%20(Dismissal).pdf",
+   "pages": 1,
+   "pypdf_chars": 619,
+   "pdftotext_chars": 621,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 1211",
+   "url": "https://www.cbca.gov/files/decisions/2009/VERGILIO_07-07-09_1211__MARYLAND_ENTERPRISE,_L.L.C._508.pdf",
+   "pages": 1,
+   "pypdf_chars": 1168,
+   "pdftotext_chars": 1113,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 8331-ISDA",
+   "url": "https://www.cbca.gov/files/decisions/2025/SULLIVAN_02-24-25_8331-ISDA__LITTLE_RIVER_BAND_OF_OTTAWA_INDIANS%20(DISMISSAL).pdf",
+   "pages": 1,
+   "pypdf_chars": 662,
+   "pdftotext_chars": 651,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7989",
+   "url": "https://www.cbca.gov/files/decisions/2024/SHERIDAN_12-03-24_7989__MELWOOD_HORTICULTURAL_TRAINING_CENTER_INC%20(DECISION).pdf",
+   "pages": 5,
+   "pypdf_chars": 12380,
+   "pdftotext_chars": 12259,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 3435-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2013/DANIELS_12-16-13_3435-TRAV__MICHAEL_A._BECKER.pdf",
+   "pages": 3,
+   "pypdf_chars": 5902,
+   "pdftotext_chars": 5880,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 4879-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2016/HYATT_08-29-16_4879-RELO__IN_THE_MATTER_OF_TIFFANY_M_WASHINGTON.pdf",
+   "pages": 4,
+   "pypdf_chars": 8013,
+   "pdftotext_chars": 7981,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7621-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2023/LESTER_05-30-23_7621-RELO__ROBERT_M%20(DECISION).pdf",
+   "pages": 9,
+   "pypdf_chars": 19340,
+   "pdftotext_chars": 19351,
+   "empty_pages": [
+    1
+   ]
+  },
+  {
+   "case": "CBCA 1898-FEMA",
+   "url": "https://www.cbca.gov/files/decisions/2010/DANIELS_03-31-10_1898-FEMA__PEARL_RIVER_COMMUNITY_COLLEGE.pdf",
+   "pages": 2,
+   "pypdf_chars": 1807,
+   "pdftotext_chars": 1769,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7642",
+   "url": "https://www.cbca.gov/files/decisions/2023/KULLBERG_02-17-23_7642__AMALGAMATED_SERVICES_INC%20(DECISION).pdf",
+   "pages": 3,
+   "pypdf_chars": 3240,
+   "pdftotext_chars": 3197,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6191",
+   "url": "https://www.cbca.gov/files/decisions/2019/SHERIDAN_05-10-19_6191__CALVARY_CONTRACTING_INC.pdf",
+   "pages": 2,
+   "pypdf_chars": 1415,
+   "pdftotext_chars": 1404,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7047, 7048",
+   "url": "https://www.cbca.gov/files/decisions/2021/OROURKE_11-01-21_7047__C_R_ASSOCIATES_INC%20(Dismissal).pdf",
+   "pages": 1,
+   "pypdf_chars": 870,
+   "pdftotext_chars": 862,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7155",
+   "url": "https://www.cbca.gov/files/decisions/2023/OROURKE_10-03-23_7155__HPM_CORPORATION%20(DISMISSAL).pdf",
+   "pages": 1,
+   "pypdf_chars": 625,
+   "pdftotext_chars": 615,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 8805-ISDA",
+   "url": "https://www.cbca.gov/files/decisions/2026/VERGILIO_02-24-26_8805-ISDA__SAN_CARLOS_APACHE_TRIBE%20(DISMISSAL).pdf",
+   "pages": 1,
+   "pypdf_chars": 655,
+   "pdftotext_chars": 639,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 2878",
+   "url": "https://www.cbca.gov/files/decisions/2016/SHERIDAN_03-09-16_2878__JANE_MOBLEY_ASSOCIATES_INC_V_GSA.pdf",
+   "pages": 15,
+   "pypdf_chars": 35846,
+   "pdftotext_chars": 35607,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 1192",
+   "url": "https://www.cbca.gov/files/decisions/2008/WALTERS_12-18-08_1192__RELIABLE_CONTRACTING_GROUP,_LLC_508.pdf",
+   "pages": 2,
+   "pypdf_chars": 2356,
+   "pdftotext_chars": 2260,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 513-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2007/DeGRAFF_03-20-07_513-RELO__JAIME_JOSE_BESTARD_508.pdf",
+   "pages": 3,
+   "pypdf_chars": 5518,
+   "pdftotext_chars": 5300,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5703-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2017/VERGILIO_09-06-17_5703-RELO__DAVID_G_KULINSKI.pdf",
+   "pages": 1,
+   "pypdf_chars": 1137,
+   "pdftotext_chars": 1135,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7468",
+   "url": "https://www.cbca.gov/files/decisions/2023/LESTER_04-19-23_7468__4K_GLOBAL-ACC_JOINT_VENTURE_LLC%20(DISMISSAL).pdf",
+   "pages": 1,
+   "pypdf_chars": 846,
+   "pdftotext_chars": 836,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 2604",
+   "url": "https://www.cbca.gov/files/decisions/2012/ZISCHKAU_11-28-12_CBCA%202604__DONALD_P_WOOD_V_GENERAL_SERVICES_ADMINISTRATION_508.pdf",
+   "pages": 9,
+   "pypdf_chars": 21956,
+   "pdftotext_chars": 20882,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7020-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2021/SULLIVAN_01-26-21_7020-TRAV__PETER_S%20(Dismissal).pdf",
+   "pages": 1,
+   "pypdf_chars": 526,
+   "pdftotext_chars": 511,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 8095-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2024/KULLBERG_08-29-24_8095-TRAV__PATRICIA_S%20(DECISION).pdf",
+   "pages": 6,
+   "pypdf_chars": 12906,
+   "pdftotext_chars": 12830,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7519",
+   "url": "https://www.cbca.gov/files/decisions/2022/BEARDSLEY_11-18-22_7519__KP_HOLDING_FLORIDA_LLC%20(Dismissal).pdf",
+   "pages": 1,
+   "pypdf_chars": 686,
+   "pdftotext_chars": 675,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 3671, 4429",
+   "url": "https://www.cbca.gov/files/decisions/2015/GOODMAN_08-21-15_4429__P3_PARTNERS,_LLC.pdf",
+   "pages": 1,
+   "pypdf_chars": 714,
+   "pdftotext_chars": 715,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 3773",
+   "url": "https://www.cbca.gov/files/decisions/2014/VERGILIO_12-10-14_3773__MACK_SCOGIN_MERRILL_ELAM_ARCHITECTS,_INC..pdf",
+   "pages": 1,
+   "pypdf_chars": 1174,
+   "pdftotext_chars": 1169,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6938-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2021/CHADWICK_01-08-21_6938-TRAV__KEVIN_A%20(Decision).pdf",
+   "pages": 1,
+   "pypdf_chars": 1068,
+   "pdftotext_chars": 1045,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 2222-ISDA",
+   "url": "https://www.cbca.gov/files/decisions/2011/SHERIDAN_08-09-11_2222-ISDA__QUINAULT_INDIAN_NATION_508.pdf",
+   "pages": 1,
+   "pypdf_chars": 1049,
+   "pdftotext_chars": 836,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 1072",
+   "url": "https://www.cbca.gov/files/decisions/2008/DANIELS_11-24-08_1072__OREGON_WOODS,_INC._508.pdf",
+   "pages": 11,
+   "pypdf_chars": 28127,
+   "pdftotext_chars": 27006,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 1460",
+   "url": "https://www.cbca.gov/files/decisions/2012/DANIELS_05-10-12_1460__WALSH_DAVIS_JOINT_VENTURE_508.pdf",
+   "pages": 2,
+   "pypdf_chars": 2781,
+   "pdftotext_chars": 2406,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6271-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2019/LESTER_02-19-19_6271-TRAV__STEWART_SIMPSON.pdf",
+   "pages": 4,
+   "pypdf_chars": 8481,
+   "pdftotext_chars": 8441,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5404-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2016/GOODMAN_12-14-16_5404-RELO__PETER_E_GODFREY.pdf",
+   "pages": 7,
+   "pypdf_chars": 14288,
+   "pdftotext_chars": 14252,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 3799-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2014/POLLACK_11-07-14_3799-TRAV__SCOTTIE_A._MURRAY.pdf",
+   "pages": 3,
+   "pypdf_chars": 6526,
+   "pdftotext_chars": 6495,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7370-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2022/OROURKE_08-26-22_7370-RELO__JOAN_P%20(Decision).pdf",
+   "pages": 3,
+   "pypdf_chars": 5956,
+   "pdftotext_chars": 5927,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6223-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2018/LESTER_10-19-18_6223-RELO__MICHAEL_A._HARRIS.pdf",
+   "pages": 4,
+   "pypdf_chars": 8477,
+   "pdftotext_chars": 8487,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 2323-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2011/GOODMAN_04-08-11_2323-RELO__SCOTT_D._HURST_508.pdf",
+   "pages": 3,
+   "pypdf_chars": 4748,
+   "pdftotext_chars": 4043,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 8133-FEMA",
+   "url": "https://www.cbca.gov/files/decisions/2025/OROURKE_03-05-25_8133-FEMA__TRINITY_COUNTY_CALIFORNIA%20(DECISION).pdf",
+   "pages": 6,
+   "pypdf_chars": 14810,
+   "pdftotext_chars": 14705,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5566",
+   "url": "https://www.cbca.gov/files/decisions/2017/LESTER_09-28-17_5566__INDUS_CORPORATION.pdf",
+   "pages": 1,
+   "pypdf_chars": 689,
+   "pdftotext_chars": 686,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 560",
+   "url": "https://www.cbca.gov/files/decisions/2007/MCCANN_06-07-07_560__STEPHEN_C._WINSLOW_508.pdf",
+   "pages": 3,
+   "pypdf_chars": 3860,
+   "pdftotext_chars": 3697,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 3358",
+   "url": "https://www.cbca.gov/files/decisions/2013/MCCANN_11-18-13_3358__PADDY_MOUNTAIN_LUMBER_COMPANY_INC.PDF",
+   "pages": 1,
+   "pypdf_chars": 751,
+   "pdftotext_chars": 688,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5129-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2016/RUSSELL_07-21-16_5129-RELO__FREDDIE_O_JARVIS_II.pdf",
+   "pages": 5,
+   "pypdf_chars": 10396,
+   "pdftotext_chars": 10326,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 9096",
+   "url": "https://www.cbca.gov/files/decisions/2026/ZISCHKAU_10-20-26_9096__PHILIPS_NORTH_AMERICA_LLC%20(DISMISSAL).pdf",
+   "pages": 1,
+   "pypdf_chars": 789,
+   "pdftotext_chars": 778,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7377-FEMA, 7381-FEMA, 7382-FEMA, 7434-FEMA",
+   "url": "https://www.cbca.gov/files/decisions/2022/LESTER_11-28-22_7377-FEMA__MONROE_COUNTY_ENGINEER%20(Decision).pdf",
+   "pages": 7,
+   "pypdf_chars": 16467,
+   "pdftotext_chars": 16361,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7306, 7307, 7473, 7474, 7475, 7613, 7614",
+   "url": "https://www.cbca.gov/files/decisions/2024/CHADWICK_03-08-24_7306__BES_DESIGN_BUILD_LLC%20(Dismissal).pdf",
+   "pages": 2,
+   "pypdf_chars": 1077,
+   "pdftotext_chars": 1055,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5553-ISDA",
+   "url": "https://www.cbca.gov/files/decisions/2017/KULLBERG_01-11-17_5553-ISDA__COW_CREEK_BAND_OF_UMPQUA_TRIBE_OF_INDIANS.pdf",
+   "pages": 1,
+   "pypdf_chars": 687,
+   "pdftotext_chars": 687,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7710-DBT",
+   "url": "https://www.cbca.gov/files/decisions/2023/GOODMAN_04-28-23_7710-DBT__KAREN_H%20(DECISION).pdf",
+   "pages": 8,
+   "pypdf_chars": 17899,
+   "pdftotext_chars": 17841,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 181-ISDA, 279-ISDA, 280-ISDA, 281-ISDA, 282-ISDA, 1948(280-ISDA)-REM, 1949(281-ISDA)-REM",
+   "url": "https://www.cbca.gov/files/decisions/2011/STEEL_02-04-11_181-ISDA_279-ISDA_280-ISDA_281-ISDA_282-ISDA_1948(280-ISDA)-REM_1949(281-ISDA)-REM__METLAKATLA_INDIAN_COMMUNITY_508.pdf",
+   "pages": 2,
+   "pypdf_chars": 1167,
+   "pdftotext_chars": 974,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 3995-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2014/KULLBERG_12-04-14_3995-TRAV__IN_THE_MATTER_OF_TOMILA_K._HEARON.pdf",
+   "pages": 5,
+   "pypdf_chars": 9548,
+   "pdftotext_chars": 9500,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 4962-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2016/DANIELS_07-29-16_4962-RELO__Olga_C_Muna.pdf",
+   "pages": 4,
+   "pypdf_chars": 8165,
+   "pdftotext_chars": 8125,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5595",
+   "url": "https://www.cbca.gov/files/decisions/2017/SULLIVAN_05-31-17_5595__BROOKS_RANGE_CONTRACT_SERVICES_INC.pdf",
+   "pages": 1,
+   "pypdf_chars": 599,
+   "pdftotext_chars": 595,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 6736(5942)-REM, 6737(5943)-REM, 6738(5944)-REM, 6739(5945)-REM, 6740(5946)-REM",
+   "url": "https://www.cbca.gov/files/decisions/2020/SOMERS_05-19-20_6736(5942)-REM,_ET_AL.,%20DEVELOPMENT%20ALTERNATIVES,%20INC.%20(Dismissal).pdf",
+   "pages": 1,
+   "pypdf_chars": 812,
+   "pdftotext_chars": 814,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 5750-RELO",
+   "url": "https://www.cbca.gov/files/decisions/2017/SHERIDAN_09-07-17_5750__DANIEL_V_MOREN.pdf",
+   "pages": 6,
+   "pypdf_chars": 13525,
+   "pdftotext_chars": 13463,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 2167",
+   "url": "https://www.cbca.gov/files/decisions/2011/SOMERS_01-20-11_2167__SINGLETON_ENTERPRISES_508.pdf",
+   "pages": 2,
+   "pypdf_chars": 1329,
+   "pdftotext_chars": 1146,
+   "empty_pages": []
+  },
+  {
+   "case": "CBCA 7115-TRAV",
+   "url": "https://www.cbca.gov/files/decisions/2021/VERGILIO_10-28-21_7115-TRAV__HEATHER_B%20(Decision).pdf",
+   "pages": 1,
+   "pypdf_chars": 1074,
+   "pdftotext_chars": 1057,
+   "empty_pages": []
+  }
+ ]
+}

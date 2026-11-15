@@ -1,0 +1,53 @@
+name: Refresh CBCA decisions
+
+# Daily 11:25 UTC: fetch CBCA's 8 decision listing pages and the PDF of every new entry (one request a
+# second), add the new rows to the Hugging Face table. Uploads only if something was added.
+# Needs the HF_TOKEN secret (write access to abigailhaddad/cbca-decisions). Without it the run does
+# everything except the upload and says so. A failed run emails the owner.
+
+on:
+  schedule:
+    - cron: "25 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q tests
+      - name: Say when the upload will be skipped
+        if: ${{ env.HF_TOKEN == '' }}
+        run: echo "::warning::HF_TOKEN is not set, so this run will not upload. Add it under Settings > Secrets and variables > Actions."
+      - name: Fetch, merge, upload
+        run: python src/refresh.py
+      - name: Summary
+        if: ${{ always() }}
+        run: '[ -f out/summary.json ] && python -c "import json;d=json.load(open(\"out/summary.json\"));[d.pop(k) for k in (\"added_rows\",\"parse_problem_list\")];print(d)" >> "$GITHUB_STEP_SUMMARY" || true'
+
+      # GitHub disables scheduled workflows in a public repo after 60 days with no commits.
+      - name: Keepalive commit
+        if: ${{ always() }}
+        run: |
+          age=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          echo "newest commit is $age days old"
+          if [ "$age" -ge 45 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "Keepalive: no commits in $age days"
+            git push
+          fi
