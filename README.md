@@ -23,3 +23,18 @@ The Armed Services Board of Contract Appeals isn't here. asbca.mil answered ever
 ## Checks
 
 The dataset card (`hf/README.md`, also on Hugging Face) has the counts and how they reconcile. `checks/` holds the sample file (each sampled field compared to the live listing row and the re-downloaded PDF, with links) and the annual-report pages used for the fiscal-year comparison, and a pdftotext comparison of 60 PDFs.
+
+## Data dictionary
+
+[`docs/data_dictionary.md`](docs/data_dictionary.md) lists every column of the table with its type, a description, the share of rows that have a value, and an example. Types, counts and examples are read from the published parquet files; descriptions are in [`docs/tables.toml`](docs/tables.toml), written from the code that builds each column. Regenerate it with
+
+    python src/data_docs.py fetch data   # download the current files from Hugging Face
+    python src/data_docs.py write data   # write docs/data_dictionary.md
+
+`write` also updates the same section in `hf/README.md`, the dataset card kept in this repo; the card is still uploaded to Hugging Face by hand. `src/data_docs.py` stops with an error if a parquet column has no description in `docs/tables.toml` or a described column is gone, and the daily workflow runs that check too.
+
+## SQLite download
+
+The daily workflow builds `cbca-decisions.sqlite` from the files on Hugging Face (table `decisions`, plus `_source`, which records the Hugging Face commit) and attaches it to the GitHub release [`latest-data`](https://github.com/abigailhaddad/cbca-decisions/releases/tag/latest-data). The release is replaced whenever the Hugging Face commit changes. To build it yourself:
+
+    python src/build_sqlite.py data cbca-decisions.sqlite
