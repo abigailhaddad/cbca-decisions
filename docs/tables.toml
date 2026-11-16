@@ -1,0 +1,45 @@
+# Column descriptions for the published table. src/data_docs.py reads this file and the parquet file and
+# writes docs/data_dictionary.md (and the same section in hf/README.md); it stops with an error if a
+# parquet column is missing here or a column here is not in the parquet, so the dictionary can't drift
+# from the schema.
+#
+# Each description comes from the code that builds the column (src/cbca.py parse_row, src/build.py,
+# src/crawl.py) or from CBCA's listing pages. A column listed in `unconfirmed` is one whose meaning the
+# source doesn't define; the dictionary marks it.
+
+dataset = "abigailhaddad/cbca-decisions"
+card = "hf/README.md"  # the dataset card kept in this repo; `write` updates its data dictionary section
+
+[tables.decisions]
+file = "data/decisions.parquet"
+config = "default"
+grain = "One row per entry on one of CBCA's eight decision listing pages (https://www.cbca.gov/decisions/), after removing exact repeats on the same page. A PDF listed on two pages is a row on each."
+primary_key = "id"
+
+[tables.decisions.columns]
+id = "Stable key: the first 12 hex characters of the SHA-1 of listing page URL, decision URL, case number and decision date joined with `|`."
+board = "Always `CBCA`."
+case_type = "Which listing page the row is on, as a label: `Contract Disputes Act`, `Relocation`, `Travel`, `ISDA (Indian Self-Determination Act)`, `FEMA arbitration`, `FCIC (crop insurance)`, `Debt` or `Rate`."
+case_number = "The case number cell as listed, whitespace collapsed (e.g. `CBCA 8250, 8251`)."
+dockets = "`case_number` split into one docket per case number, `; `-separated (e.g. `CBCA 8250; CBCA 8251`). Suffixes such as `-RELO` are kept. A number with no board prefix gets `CBCA`; another prefix as listed (GSBCA, or the listing's one `CCBCA`) is kept."
+docket_count = "Number of dockets in `dockets`."
+party = "The party cell as listed (the appellant, claimant, applicant or petitioner); this is the cell linked to the decision."
+party_role = "The listing table's heading for the party column: `Appellant`, `Claimant`, `Applicant` or `Petitioner`."
+judge = "The judge cell as listed, misspellings included."
+decision_type = "Contract Disputes Act page only, since 2015: the type cell (`Decision`, `Dismissal`, `Order`, `Full Board Order`), with the misspellings `Decison` and `Decsion` corrected to `Decision`. Null on the other pages and earlier years."
+decision_type_raw = "The type cell exactly as listed, before the spelling fix."
+decision_date = "The date cell, parsed (MM/DD/YYYY, MM/DD/YY or MM-DD-YYYY on the listing)."
+agency = "Not on the listing. Read from the decision text: the Respondent in the caption, or else the first `appearing for ...` or `counsel for ...` naming a federal body. Upper-cased, otherwise as written (typos in the decision stay). Null when neither is found."
+agency_source = "Where `agency` came from: `caption: Respondent` or `appearing for / counsel for`. Null when `agency` is null."
+decision_url = "Link to the decision from the listing row, made absolute and percent-encoded. Kept as listed even when it is broken (see `text_status`)."
+file_format = "What the link returned: `pdf` or `html` (a few early decisions are HTML pages). Null when it wasn't fetched or didn't return a document."
+listing_page = "URL of the listing page the row is on."
+also_listed_on = "Other listing page(s) linking the same `decision_url`, `; `-separated. Null for most rows."
+pdf_pages = "Number of pages in the PDF, from pypdf. Null when there is no PDF (no link, a failed download, or an HTML decision)."
+text_chars = "Length of the extracted text in characters (0 when a PDF gave no text). Null when no document was downloaded."
+text_status = "Result of fetching and extracting the decision: `ok`; `little or no text (likely scanned)` (under 200 characters from a PDF); `partial (a page has no text, likely scanned)`; `partial (some pages failed)`; `extract failed`; `HTTP <code>`; `not a PDF or HTML`; `not fetched`; or `no link on listing`."
+date_in_text = "True if `decision_date`, written as `Month D, YYYY`, appears in the first 3,000 characters of the text. Null when there is no text."
+docket_in_text = "True if one of the bare docket numbers from `dockets` appears anywhere in the text (not as part of a longer number). Null when there is no text."
+docket_in_file_name = "True if one of the bare docket numbers appears in the file name at the end of `decision_url`. Null when there is no link."
+text = "The decision text extracted from the PDF with pypdf (no OCR), or the page text for HTML decisions. Null when nothing was extracted."
+fetched_at = "When the decision link was requested, UTC, ISO 8601 (also set when the request failed). Null when there is no link."
